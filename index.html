@@ -33,6 +33,7 @@ body {font-size:16px;}
     <a href="#conferenceprogram" onclick="myDesign_close()" class="myDesign-bar-item myDesign-button myDesign-hover-white">Conference Program</a>
     <a href="#registration" onclick="myDesign_close()" class="myDesign-bar-item myDesign-button myDesign-hover-white">Registration</a> 
     <a href="#organizingcommittee" onclick="myDesign_close()" class="myDesign-bar-item myDesign-button myDesign-hover-white">Organizing Committee</a> 
+    <a href="#acknowledgment-sponsors" onclick="myDesign_close()" class="myDesign-bar-item myDesign-button myDesign-hover-white">Acknowledgments</a> 
     <a href="#contact" onclick="myDesign_close()" class="myDesign-bar-item myDesign-button myDesign-hover-white">Contact</a>
 	<a href="#history" onclick="myDesign_close()" class="myDesign-bar-item myDesign-button myDesign-hover-white">Previous Meetings</a>
   </div>
@@ -53,6 +54,26 @@ body {font-size:16px;}
   <!-- Header -->
   <div class="myDesign-container" style="margin-top:80px" id="about">
     <h1 class="myDesign-jumbo"><b>CoMFoS&ndash;NASC 2026</b></h1>
+	<style>
+	  p#lastModified {
+	    color: blue;
+	  }
+	</style>
+
+	<p id="lastModified">Page last updated: <span id="lastModifiedDate"></span></p>
+
+	<script>
+	  function displayLastModified() {
+	    const lastModified = new Date(document.lastModified);
+	    const year = lastModified.getFullYear();
+	    const month = String(lastModified.getMonth() + 1).padStart(2, '0');
+	    const day = String(lastModified.getDate()).padStart(2, '0');
+	    const formattedDate = `${year}-${month}-${day}`;
+	    document.getElementById("lastModifiedDate").innerHTML = formattedDate;
+	  }
+	  window.onload = displayLastModified;
+	</script>
+	
     <h1 class="myDesign-xxxlarge myDesign-text-myColor"><b>About</b></h1>
     <!-- <hr style="width:50px;border:5px solid red" class="myDesign-round"> -->
   <p>
@@ -94,6 +115,8 @@ body {font-size:16px;}
     <p>
         Through invited talks and interactive sessions, participants will engage with leading experts, exchange ideas, and gain insights into mathematical frameworks and computational methodologies for addressing complex nonlinear problems across disciplines such as physics, biology, and engineering.
     </p>
+	
+	
 
 
   </div>
@@ -161,11 +184,11 @@ CoMFoS–NASC 2026 is the result of the active collaboration between Kanazawa Un
 	            </tr>
 	            <tr>
 	                <td align="right"><b>Early-bird Registration Deadline</b></td>
-	                <td align="left">[TBA]</td>
+	                <td align="left">March 31, 2025</td>
 	            </tr>
 	            <tr>
 	                <td align="right"><b>Registration Deadline</b></td>
-	                <td align="left">[TBA]</td>
+	                <td align="left">January 31, 2025</td>
 	            </tr>
 	            <tr>
 	                <td align="right"><b>Abstract Submission Deadline</b></td>
@@ -201,6 +224,32 @@ CoMFoS–NASC 2026 is the result of the active collaboration between Kanazawa Un
 	Details of the meeting will be announced soon.
 	</p>
   </div>
+  
+  <p>
+	  <div class="myDesign-row-padding myDesign-center">
+
+	    <div class="myDesign-quarter">
+	      <img src="images/photo1.jpg" class="myDesign-image" alt="Photo 1">
+	    </div>
+
+	    <div class="myDesign-quarter">
+	      <img src="images/photo2.jpg" class="myDesign-image" alt="Photo 2" style="width: 95.5%; height: auto;">
+		  <img src="images/photo5.jpg" class="myDesign-image" alt="Photo 5" style="width: 95.5%; height: auto;">
+	    </div>
+
+	    <div class="myDesign-quarter">
+	      <img src="images/photo3.jpg" class="myDesign-image" alt="Photo 3">
+		  <img src="images/photo4.jpg" class="myDesign-image" alt="Photo 4">
+	    </div>
+		
+	    <div class="myDesign-quarter">
+	      <img src="images/venuephoto1.jpg" class="myDesign-image" alt="Photo 6">
+		  <img src="images/venuephoto2.jpg" class="myDesign-image" alt="Photo 7">
+	    </div>
+
+	  </div>
+		  
+  </p>  
   <!-- ================================================================================= -->
   <!-- ================================================================================= -->
   <!-- ================================================================================= --> 
@@ -249,11 +298,15 @@ CoMFoS–NASC 2026 is the result of the active collaboration between Kanazawa Un
 
 
 	    <tr>
-	      <td align="right"><b><a href="https://math.upd.edu.ph/faculty/fulgencio-rheadel" target="_blank">Rheadel FULGENCIO</a></b><sup>*</sup></td>
+	      <td align="right"><b><a href="https://math.upd.edu.ph/faculty/fulgencio-rheadel" target="_blank">Rheadel FULGENCIO</a></b></td>
 	      <td align="left">University of the Philippines Diliman</td>
 	    </tr>
 		
-		
+	
+	    <tr>
+	      <td align="right"><b><a href="http://amth.mind.meiji.ac.jp" target="_blank">Elliot GINDER</a></b></td>
+	      <td align="left">Meiji University, Japan</td>
+	    </tr>	
 
 	    <tr>
 	      <td align="right"><b><a href=" " target="_blank">Clark Kendrick GO</a></b></td>
@@ -279,7 +332,7 @@ CoMFoS–NASC 2026 is the result of the active collaboration between Kanazawa Un
 		
 		
 	    <tr>
-	      <td align="right"><b><a href="https://puzhaokow1993.github.io/homepage/" target="_blank">Pu Zhao KOW</a></b><sup>*</sup></td>
+	      <td align="right"><b><a href="https://puzhaokow1993.github.io/homepage/" target="_blank">Pu Zhao KOW</a></b></td>
 	      <td align="left">National Chengchi University, Taiwan</td>
 	    </tr>
 
@@ -290,17 +343,17 @@ CoMFoS–NASC 2026 is the result of the active collaboration between Kanazawa Un
 	    </tr>
 		
 		
-	    <tr>
-		  <td align="right"><b><a href="https://math.upd.edu.ph/faculty/lope-jose-ernie" target="_blank">Jose Ernie LOPE</a></b><sup>*</sup></td>	
+	    <!-- <tr>
+		  <td align="right"><b><a href="https://math.upd.edu.ph/faculty/lope-jose-ernie" target="_blank">Jose Ernie LOPE</a></b><sup>*</sup></td>
 	      <td align="left">University of the Philippines Diliman</td>
-	    </tr>
+	    </tr> -->
 		
 	    <tr>
 	      <td align="right"><b><a href="https://scheme.hn/" target="_blank">Hirofumi NOTSU</a></b></td>
 	      <td align="left">Kanazawa University, Japan</td>
 	    </tr>
 
-	    <tr>
+	    <!-- <tr>
 	      <td align="right"><b><a href=" " target="_blank">Hiroshi OHTSUKA</a></b><sup>*</sup></td>
 	      <td align="left">Kanazawa University, Japan</td>
 	    </tr>
@@ -308,7 +361,7 @@ CoMFoS–NASC 2026 is the result of the active collaboration between Kanazawa Un
 	    <tr>
 	      <td align="right"><b><a href="https://sites.google.com/site/koyasakakibara/home" target="_blank">Koya SAKAKIBARA</a></b></td>
 	      <td align="left">Kanazawa University, Japan</td>
-	    </tr>
+	    </tr> -->
 		
 	    <tr>
 	      <td align="right"><b><a href="https://karel.fpark.tmu.ac.jp/index_e.html" target="_blank">Karel ŠVADLENKA</a></b></td>
@@ -360,7 +413,11 @@ CoMFoS–NASC 2026 is the result of the active collaboration between Kanazawa Un
   <div class="myDesign-container" id="registration" style="margin-top:75px">
     <h1 class="myDesign-xxxlarge myDesign-text-myColor"><b>Registration</b></h1>
     <!-- <hr style="width:50px;border:5px solid red" class="myDesign-round"> -->
-    <p>To be announced.</p>
+
+	
+	<!-- <p>
+		The registration fee covers lunches, coffee breaks, and the conference kit for the duration of the event.
+	</p>	 -->
   </div>
   <!-- ================================================================================= -->
   <!-- ================================================================================= -->
@@ -430,6 +487,56 @@ CoMFoS–NASC 2026 is the result of the active collaboration between Kanazawa Un
   <!-- ================================================================================= -->
   <!-- ================================================================================= -->
   <!-- ================================================================================= --> 
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ================================================================================= -->
+  <!-- ================================================================================= -->
+  <!-- ================================================================================= --> 
+  <!-- Acknowledgments & Sponsorship -->
+  <div class="myDesign-container" id="acknowledgment-sponsors" style="margin-top:75px">
+    <h1 class="myDesign-xxxlarge myDesign-text-myColor"><b>Acknowledgments & Sponsors</b></h1>
+  
+	<div class="myDesign-row-padding myDesign-center myDesign-padding-32">
+	  <div class="myDesign-seventh myDesign-padding">
+	    <img src="images/NASC.png" alt="Logo 1" class="myDesign-image">
+	  </div>
+	  <div class="myDesign-seventh myDesign-padding">
+	    <img src="images/IM.png" alt="Logo 2" class="myDesign-image">
+	  </div>
+	  <div class="myDesign-seventh myDesign-padding">
+	    <img src="images/UP.png" alt="Logo 3" class="myDesign-image">
+	  </div>
+	  <div class="myDesign-seventh myDesign-padding">
+	    <img src="images/KU_seal.png" alt="Logo 4" class="myDesign-image">
+	  </div>
+	  <div class="myDesign-seventh myDesign-padding">
+	    <img src="images/UPCebu.png" alt="Logo 5" class="myDesign-image">
+	  </div>
+	  <div class="myDesign-seventh myDesign-padding">
+	    <img src="images/UPCMath.png" alt="Logo 6" class="myDesign-image">
+	  </div>
+	  <div class="myDesign-seventh myDesign-padding">
+	    <img src="images/MSP.png" alt="Logo 7" class="myDesign-image">
+	  </div>
+	</div>
+
+  </div>
+  <!-- ================================================================================= -->
+  <!-- ================================================================================= -->
+  <!-- ================================================================================= -->
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -628,6 +735,7 @@ CoMFoS–NASC 2026 is the result of the active collaboration between Kanazawa Un
  
   
 <!-- End page content -->
+  
 </div>
 
 
