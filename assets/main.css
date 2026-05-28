@@ -273,9 +273,33 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 
 /*ADDED BY FERGY FOR COMFOSNASC*/
+.myDesign-fourth {
+  float: left;
+  width: 25%; 
+  box-sizing: border-box;
+}
+
+.myDesign-sixth {
+  float: left;
+  width: 16.66%; 
+  box-sizing: border-box;
+}
+
 .myDesign-seventh {
   float: left;
-  width: 14.28%; /* 100 / 7 ≈ 14.28% */
+  width: 14.28%; 
+  box-sizing: border-box;
+}
+
+.myDesign-ninth {
+  float: left;
+  width: 11.11%; 
+  box-sizing: border-box;
+}
+
+.myDesign-tenth {
+  float: left;
+  width: 10%; 
   box-sizing: border-box;
 }
 
